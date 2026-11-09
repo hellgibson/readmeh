@@ -1,0 +1,23 @@
+name: ReadMeh
+options:
+  bundleIdPrefix: com.readmeh
+  deploymentTarget:
+    iOS: "17.0"
+  createIntermediateGroups: true
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    TARGETED_DEVICE_FAMILY: "1"
+    IPHONEOS_DEPLOYMENT_TARGET: "17.0"
+    GENERATE_INFOPLIST_FILE: NO
+    INFOPLIST_FILE: ReadMeh/Info.plist
+targets:
+  ReadMeh:
+    type: application
+    platform: iOS
+    sources:
+      - path: ReadMeh
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.readmeh.app
+        SWIFT_VERSION: "5.0"
